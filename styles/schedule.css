@@ -1,0 +1,207 @@
+
+
+.schedules {
+    width: 54.563rem;
+    margin: 0 auto;
+    position: relative;
+    opacity: 1;
+    
+    & .intro {
+    display: flex;
+    flex-direction: column;
+    
+
+    
+    gap: 4px;
+    & h2 {
+        font-family: "Inter Tight", sans-serif;
+        color: var(--content-primary);
+        font-weight: bold;
+        font-size: 26px;
+    }
+
+    & h3 {
+        font-family: "Inter", sans-serif;
+        color: var(--content-secondary);
+    }
+  }
+  
+  & .input-1 {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 0.75rem 0.75rem;
+  border: 1px solid var(--border-primary);
+  border-radius: 8px;
+
+    & input {
+      border: none;
+      outline: none;
+      background-color: var(--background-primary);
+      color: var(--content-secondary);
+      font-family: "inter", sans-serif;
+      font-size: 1rem;
+     }
+
+     ::-webkit-calendar-picker-indicator {
+      cursor: pointer;
+      background: url("../assets/icon.svg") no-repeat;
+    }
+  }
+}
+
+.schedules > header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.schedule-period header{
+  width: 100%;
+  display: flex;
+
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  border-bottom-color: #504e52;
+  margin-top: 4rem;
+  background-color: #2E2C30;
+  padding: 1.25rem 0.75rem;
+  border-radius: 8px 8px 0px 0px;
+}
+
+.schedule-period header strong {
+  color: var(--content-primary);
+  font-family: "Inter Tight", sans-serif;
+  font-weight: bold;
+  font-size: 1rem;
+  flex: 1;
+}
+
+.schedule-period img {
+  margin-right: 0.75rem;
+}
+
+.schedule-period span {
+  color: var(--content-secondary);
+  font-family: "Inter Tight", sans-serif;
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+.period{
+ display: flex;
+ padding: 2rem;
+ flex-direction: column;
+ background-color: #2E2C30;
+ border-radius: 0px 0px 8px 8px;
+ gap: 20px;
+ align-content: center;
+
+}
+
+.period strong {
+  color: var(--content-primary);
+  font-family: "Inter Tight", sans-serif;
+  font-weight: bold;
+}
+
+.period li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 1rem;
+}
+
+
+.period p {
+  font-family: "Inter Tight", sans-serif;
+  color: var(--content-secondary);
+}
+
+.period a {
+  font-family: "Inter Tight", sans-serif;
+  color: var(--content-secondary);
+}
+
+.border {
+  margin-top: 1.20rem;
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  border-bottom-color: #504e52;
+}
+
+.schedules .agendamento {
+  display: flex;
+  justify-content: end;
+  
+  margin-top: 2rem;
+}
+
+.agendamento button {
+  padding: 1rem 1.5rem;
+  background-color: var(--content-brand);
+  border: none;
+  border-radius: 8px;
+  font-family: "Inter Tight", sans-serif;
+  font-weight: bold;
+  font-size: 1rem;
+  text-transform: uppercase;
+  }
+
+.agendamento button:hover {
+background-color: var(--background-highlights);
+}
+
+.cancel {
+  cursor: pointer;
+  transition: opacity 0.2s;
+}
+
+@media(width < 844px) {
+  .schedules  {
+     width: 390px;
+     padding: 14px;
+     position: relative;
+  }
+
+  .schedules header h2{
+    font-size: 24px;
+  }
+
+  .schedules header h3{
+    font-size: 14px;
+  }
+
+ .schedules > header {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+ }
+
+.schedules .input-1 {
+  width: 60%;
+}
+
+.period li {
+  font-size: 14px;
+  gap: 7px;
+}
+
+.period {
+  padding: 10px;
+}
+
+.schedules .agendamento {
+  display: flex;
+  flex-direction: column;
+  padding: 12px 24px;
+  margin-top: 60px;
+}
+
+.form {
+  padding: 40px 20px;
+  right: 20px;
+  top: 15px;
+  width: 350px;
+  position: absolute;
+}
+}

@@ -1,0 +1,137 @@
+form {
+    width: 28rem;
+    margin: 0 auto;
+    background-color: #2E2C30;
+    padding: 40px;
+    border-radius: 8px;
+    position: absolute;
+    top: 200px;
+    margin-left: 200px;
+
+    }
+
+
+form header {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+form header h2 {
+    font-family: "Inter Tight", sans-serif;
+        color: var(--content-primary);
+        font-weight: bold;
+        font-size: 26px;
+}
+
+form header h3 {
+    font-family: "Inter", sans-serif;
+        color: var(--content-secondary);
+}
+
+.descripition {
+    display: flex;
+    flex-direction: column;
+    margin-top: 48px;
+    gap: 18px;
+}
+
+.label{
+    font-family: "Inter", sans-serif;
+    color: var(--content-primary);
+    font-weight: bold;
+}
+
+.input {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-top: 4px;
+    border: 1px solid ;
+    padding: 12px;
+    border: 1px solid #504e52;
+    border-radius: 8px;
+    
+    ::-webkit-calendar-picker-indicator {
+        cursor: pointer;
+        background: url("../assets/icon.svg") no-repeat;
+      }
+}
+
+.input input {
+    width: 100%;
+    background-color: #2E2C30;
+    border: none;
+    font-family: "Inter", sans-serif;
+    color: var(--content-primary);
+    
+}
+
+textarea:focus, input:focus, select:focus {
+    box-shadow: 0 0 0 0;
+    border: 0 none;
+    outline: 0;
+}
+
+.input:hover {
+    border: 1px solid var(--content-primary);
+}
+
+.input textarea {
+    width: 100%;
+    background-color: #2E2C30;
+    border: none;
+    font-family: "Inter", sans-serif;
+    color: var(--content-primary);
+}
+
+.period a:hover {
+    color: var(--content-primary);
+    text-decoration: underline;
+ }
+ 
+ .dateHours {
+   display: flex;
+   justify-content: space-between;
+ }
+ 
+.date input {
+    padding: 0 10px;
+}
+
+.button {
+    display: flex;
+    justify-content: end;
+    margin-top: 28px;
+}
+
+.button button {
+    padding: 1rem 1.5rem;
+    background-color: var(--content-brand);
+    border: none;
+    border-radius: 8px;
+    font-family: "Inter Tight", sans-serif;
+    font-weight: bold;
+    font-size: 1rem;
+    text-transform: uppercase;
+}
+
+.button button:hover {
+    background-color: var(--background-highlights);
+}
+
+select {
+    background-color: #2E2C30;
+    border: none;
+    color: white;
+    font-family: "Inter Tight", sans-serif;
+    padding: 4px;
+}
+
+.hour-unavailable {
+  display: none;
+}
+
+.hour-unavailable {
+    cursor: pointer;
+}

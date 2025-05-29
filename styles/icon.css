@@ -1,0 +1,15 @@
+.icon {
+    width: 10.563rem;
+    display: flex;
+    gap: 0.25rem;
+    padding: 1.25rem 1.75rem;
+    background-color: #2E2C30;
+    border-radius: 0 0.5rem 0.5rem 0;
+    & h3 {
+        color: var(--content-brand);
+        font-family: "Familjen Grotesk", sans-serif;
+        font-weight: bold;
+        font-size: 1rem;
+        text-transform: uppercase;
+    }
+}

@@ -135,3 +135,11 @@ select {
 .hour-unavailable {
     cursor: pointer;
 }
+
+.hour-selected {
+    cursor: pointer;
+}
+
+.hour {
+    cursor: pointer;
+}

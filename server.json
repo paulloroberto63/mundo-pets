@@ -1,3 +1,20 @@
 {
-    "schedules" : []
+  "schedules": [
+    {
+      "id": 30,
+      "name": "paullo",
+      "pet": "dawda",
+      "tel": "47988231490",
+      "description": "dwadwad",
+      "when": "2025-06-07T23:00:00.000Z"
+    },
+    {
+      "id": 59,
+      "name": "paullo",
+      "pet": "dawda",
+      "tel": "47988231490",
+      "description": "awdawdawd",
+      "when": "2025-06-08T00:00:00.000Z"
+    }
+  ]
 }

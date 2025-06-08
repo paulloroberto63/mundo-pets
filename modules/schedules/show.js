@@ -24,7 +24,7 @@ export function schedulesShow({ dailySchedules }){
             pet.textContent = schedule.pet
             description.textContent = schedule.description
             remove.textContent = "Remover agendamento"
-
+            remove.classList.add("cancel")
 
             
 

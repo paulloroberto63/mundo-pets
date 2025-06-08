@@ -156,6 +156,10 @@ background-color: var(--background-highlights);
   transition: opacity 0.2s;
 }
 
+.cancel {
+  cursor: pointer;
+}
+
 @media(width < 844px) {
   .schedules  {
      width: 390px;

@@ -1,14 +1,19 @@
 import dayjs from "dayjs"
 
 import { scheduleNew } from "../../services/schedule-new"
+import { schedulesDay } from "../schedules/load.js"
 
 const form = document.querySelector("form")
 const clientName = document.getElementById("client")
 const clientPet = document.getElementById("pet")
 const clientTel = document.getElementById("tel")
 const clientDescription = document.getElementById("description")
-
+const button = document.getElementById("button")
 const selectedDate = document.getElementById("date")
+
+button.addEventListener("click", (event) => { 
+    form.classList.remove("confirm")
+})
 
 // evento de adicionar apenas numeros no input
 clientTel.addEventListener('input', (event) => {
@@ -60,6 +65,7 @@ form.onsubmit = async (event) => {
     // Gera um ID
     const id = new Date().getMinutes()
 
+    // Faz o agendamento.
     await scheduleNew({
         id,
         name,
@@ -68,7 +74,16 @@ form.onsubmit = async (event) => {
         description,
         when
 })
-    } catch (error) {
+
+// Recarrega os agendamentos
+ await schedulesDay()
+
+// Limpa o input de nome do cliente.
+ clientName.value =""
+
+form.classList.add("confirm")
+    
+} catch (error) {
         alert("Não foi possivel realizar o agendamento")
         console.log(error)
     }
